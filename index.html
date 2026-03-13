@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chinese Tone Game</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/pitchfinder@1.2.0/dist/pitchfinder.min.js"></script>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+padding:20px;
+}
+
+button{
+font-size:20px;
+padding:12px;
+margin:10px;
+}
+
+canvas{
+max-width:500px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>🎮 Chinese Tone Game</h1>
+
+<h2>妈 mā (1성)</h2>
+
+<button onclick="playNative()">🔊 원어민 듣기</button>
+
+<button onclick="startRecording()">🎤 발음하기</button>
+
+<canvas id="chart"></canvas>
+
+<h2 id="score">Score: ?</h2>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
